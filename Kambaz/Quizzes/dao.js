@@ -3,6 +3,7 @@ import QuizModel, { QuizAttemptModel } from "./model.js";
 
 // Quiz CRUD functions
 export const createQuiz = async (quiz) => {
+  console.log("IN CREATE QUIZ")
   try {
     console.log("Creating quiz:", quiz);
     return await QuizModel.create(quiz);
